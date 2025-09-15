@@ -1,3 +1,6 @@
+INSERT INTO tb_game_list (name) VALUES ('Aventura e RPG')
+INSERT INTO tb_game_list (name) VALUES ('Jogos de Plataforma')
+
 INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Mass Effect Trilogy', 4.8, 2012, 'Role-playing (RPG), Shooter', 'Xbox, Playstation, PC', 'https://example.com/masseffect.jpg', 'An epic sci-fi RPG series.', 'Experience an epic space adventure across the galaxy.');
 INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Red Dead Redemption 2', 4.9, 2018, 'Action, Adventure', 'Xbox, Playstation, PC', 'https://example.com/rdr2.jpg', 'A sprawling western epic.', 'Immerse yourself in the vast open world of the American frontier.');
 INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('The Witcher 3: Wild Hunt', 4.9, 2015, 'Role-playing (RPG), Adventure', 'Xbox, Playstation, PC', 'https://example.com/witcher3.jpg', 'A dark fantasy RPG.', 'Follow the story of Geralt of Rivia in a richly detailed world.');
@@ -7,4 +10,16 @@ INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_d
 INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Hollow Knight', 4.8, 2017, 'Action, Adventure, Metroidvania', 'PC, Switch, Playstation, Xbox', 'https://example.com/hollowknight.jpg', 'A beautifully crafted indie game.', 'Explore the vast underground world of Hallownest.');
 INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Ori and the Blind Forest', 4.9, 2015, 'Platformer, Adventure', 'Xbox, PC', 'https://example.com/ori.jpg', 'A visually stunning platformer.', 'Embark on a heartfelt journey through a mystical forest.');
 INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Cuphead', 4.7, 2017, 'Run and Gun, Platformer', 'Xbox, PC, Switch', 'https://example.com/cuphead.jpg', 'A challenging run and gun game.', 'Fight through beautifully hand-drawn levels inspired by 1930s cartoons.');
-INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Sonic CD', 4.6, 1993, 'Platformer', 'Sega CD', 'https://example.com/soniccd.jpg', 'A classic Sonic the Hedgehog game', 'Travel through time to stop Dr. Robotnik''s evil plans.'); 
+INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Sonic CD', 4.6, 1993, 'Platformer', 'Sega CD', 'https://example.com/soniccd.jpg', 'A classic Sonic the Hedgehog game', 'Travel through time to stop Dr. Robotnik''s evil plans.');
+
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (1, 1, 0);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (1, 2, 1);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (1, 3, 2);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (1, 4, 3);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (1, 5, 4);
+
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 6, 0);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 7, 1);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 8, 2);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 9, 3);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 10, 4); 
